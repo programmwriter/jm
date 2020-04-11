@@ -1,0 +1,20 @@
+// todo создать переменную для margin на разные media
+//размеры медиа
+$sm: 500px;
+$md: 768px;
+$lg: 1119px;
+
+// общий марджин слева
+$margin: 16px;
+//mobile
+@media screen and (max-width: $md) {
+  
+}
+//planshet
+@media screen and (max-width: $lg) and (min-width: $sm) {
+  $margin: 24px !global;
+}
+//desctop
+@media screen and (min-width: $lg) {
+  $margin: 16px !global;
+}

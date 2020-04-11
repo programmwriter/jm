@@ -1,14 +1,408 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-</head>
-<body>
-<img src="./img/webpack.svg" alt="Webpack Logo" width="200px">
-<h3>Welcome to Webpack 4 starter </h3>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css" />
+    <title>CPS</title>
+  </head>
+  <body>
+    <section class="container">
+      <section class="upper-menu">
+        <div class="upper-menu__left-part">
+          <div class="upper-menu__item">
+            <button class="btn-link">
+              <img src="img/burger.svg" alt="" class="btn-link__img" />
+            </button>
+          </div>
+          <div class="upper-menu__item">
+            <a href="#" class="upper-menu__home-link"
+              ><img src="img/Group.svg" alt="logo" class="logo"
+            /></a>
+          </div>
+        </div>
+        <div class="upper-menu__right-part">
+          <div class="upper-menu__item upper-menu__item--hidden">
+            <div class="icons-set">
+              <div class="icons-set__icon">
+                <button class="btn-link">
+                  <img src="img/call.svg" alt="" class="btn-link__img" />
+                </button>
+              </div>
+              <div class="icons-set__icon">
+                <button class="btn-link">
+                  <img src="img/chat.svg" alt="" class="btn-link__img" />
+                </button>
+              </div>
+              <div class="icons-set__icon">
+                <button class="btn-link">
+                  <img src="img/profile.svg" alt="" class="btn-link__img" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="upper-menu__item">
+            <div class="delimeter"></div>
+          </div>
+          <div class="upper-menu__item">
+            <button class="btn-link">
+              <p class="btn-link__title">Оставить заявку</p>
+              <img src="img/repair.svg" alt="" class="btn-link__img" />
+            </button>
+          </div>
+          <div class="upper-menu__item">
+            <button class="btn-link">
+              <p class="btn-link__title">Статус ремонта</p>
+              <img src="img/checkstatus.svg" alt="" class="btn-link__img" />
+            </button>
+          </div>
+        </div>
+      </section>
+      <div class="title__box">
+        <div class="title">
+          <h1 class="title__text">Услуги и сервисы</h1>
+        </div>
+      </div>
+      <div class="slide-menu ">
+        <ul class="slide-menu__items">
+          <li class="slide-menu__item slide-menu__item--active">
+            <a class="slide-menu__anchor" href="side-menu.html"
+              >Ремонтируемые устройства</a
+            >
+          </li>
+          <li class="slide-menu__item">
+            <a class="slide-menu__anchor" href="#">Дополнительные услуги</a>
+          </li>
+          <li class="slide-menu__item">
+            <a class="slide-menu__anchor" href="#">Цены на услуги</a>
+          </li>
+          <li class="slide-menu__item">
+            <a class="slide-menu__anchor" href="#">Адерса сервисных центров</a>
+          </li>
+          <li class="slide-menu__item">
+            <a class="slide-menu__anchor" href="#">Специальные цены</a>
+          </li>
+          <li class="slide-menu__item">
+            <a class="slide-menu__anchor" href="#">Взносы</a>
+          </li>
+        </ul>
+        <div class="slide-menu__content">
+          <div class="slide-menu__description">
+            <p class="slide-menu__text">
+              Мы являемся авторизованным сервисным центром по ремонту техники
+              Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+              официальной гарантией производителя
+              <span class="slide-menu__text--md">
+                <br /><br />
+                Мы успешно работаем с 1992 года и заслужили репутацию надежного
+                партнера</span
+              ><span class="slide-menu__text--lg"
+                >, что подтверждает большое количество постоянных клиентов. Мы
+                гордимся тем, что к нам обращаются по рекомендациям и, в свою
+                очередь, советуют нас родным и близким.</span
+              >
+            </p>
+            <button data-block="slide" class="more-btn">Читать далее</button>
+          </div>
+          <img
+            src="img/repair.png"
+            alt="Вывеска при входе"
+            class="slide-menu__img"
+          />
+        </div>
+      </div>
+      <article class="brends box">
+        <div class="brends__content">
+          <div class="article-title">
+            <p class="article-title__text">Ремонт техники различных брендов</p>
+          </div>
+          <ul class="brends__items">
+            <li class="brends__item">
+              <div class="brend-slide">
+                <a href="#" class="brend-slide__img-link">
+                  <img
+                    src="./img/lenovo_logo.svg"
+                    alt=""
+                    class="brend-slide__img"
+                /></a>
+                <div class="brend-slide__btn-box">
+                  <button class="brend-slide__btn-link"></button>
+                </div>
+              </div>
+            </li>
+            <li class="brends__item">
+              <div class="brend-slide">
+                <a href="#" class="brend-slide__img-link">
+                  <img
+                    src="./img/samsung_logo.svg"
+                    alt=""
+                    class="brend-slide__img"
+                /></a>
+                <div class="brend-slide__btn-box">
+                  <button class="brend-slide__btn-link"></button>
+                </div>
+              </div>
+            </li>
+            <li class="brends__item">
+              <div class="brend-slide">
+                <a href="#" class="brend-slide__img-link">
+                  <img
+                    src="./img/apple_logo.svg"
+                    alt=""
+                    class="brend-slide__img"
+                /></a>
+                <div class="brend-slide__btn-box">
+                  <button class="brend-slide__btn-link"></button>
+                </div>
+              </div>
+            </li>
+            <li class="brends__item">
+              <div class="brend-slide">
+                <a href="#" class="brend-slide__img-link">
+                  <img
+                    src="./img/viewsonic_logo.svg"
+                    alt=""
+                    class="brend-slide__img"
+                /></a>
+                <div class="brend-slide__btn-box">
+                  <button class="brend-slide__btn-link"></button>
+                </div>
+              </div>
+            </li>
+            <li class="brends__item">
+              <div class="brend-slide">
+                <a href="#" class="brend-slide__img-link">
+                  <img
+                    src="./img/bosch_logo.svg"
+                    alt=""
+                    class="brend-slide__img"
+                /></a>
+                <div class="brend-slide__btn-box">
+                  <button class="brend-slide__btn-link"></button>
+                </div>
+              </div>
+            </li>
+            <li class="brends__item">
+              <div class="brend-slide">
+                <a href="#" class="brend-slide__img-link">
+                  <img
+                    src="./img/hp_logo.svg"
+                    alt=""
+                    class="brend-slide__img"
+                /></a>
+                <div class="brend-slide__btn-box">
+                  <button class="brend-slide__btn-link"></button>
+                </div>
+              </div>
+            </li>
+            <li class="brends__item">
+              <div class="brend-slide">
+                <a href="#" class="brend-slide__img-link">
+                  <img
+                    src="./img/acer_logo.svg"
+                    alt=""
+                    class="brend-slide__img"
+                /></a>
+                <div class="brend-slide__btn-box">
+                  <button class="brend-slide__btn-link"></button>
+                </div>
+              </div>
+            </li>
+            <li class="brends__item">
+              <div class="brend-slide">
+                <a href="#" class="brend-slide__img-link">
+                  <img
+                    src="./img/sony_logo.svg"
+                    alt=""
+                    class="brend-slide__img"
+                /></a>
+                <div class="brend-slide__btn-box">
+                  <button class="brend-slide__btn-link"></button>
+                </div>
+              </div>
+            </li>
+            <li class="brends__item brends__item--hidden">
+              <div class="brend-slide">
+                <a href="#" class="brend-slide__img-link">
+                  <img
+                    src="./img/sony_logo.svg"
+                    alt=""
+                    class="brend-slide__img"
+                /></a>
+                <div class="brend-slide__btn-box">
+                  <button class="brend-slide__btn-link"></button>
+                </div>
+              </div>
+            </li>
+            <li class="brends__item brends__item--hidden">
+              <div class="brend-slide">
+                <a href="#" class="brend-slide__img-link">
+                  <img
+                    src="./img/sony_logo.svg"
+                    alt=""
+                    class="brend-slide__img"
+                /></a>
+                <div class="brend-slide__btn-box">
+                  <button class="brend-slide__btn-link"></button>
+                </div>
+              </div>
+            </li>
+            <li class="brends__item brends__item--hidden">
+              <div class="brend-slide">
+                <a href="#" class="brend-slide__img-link">
+                  <img
+                    src="./img/sony_logo.svg"
+                    alt=""
+                    class="brend-slide__img"
+                /></a>
+                <div class="brend-slide__btn-box">
+                  <button class="brend-slide__btn-link"></button>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <button data-block="brends" class="more-btn brends__more-btn ">
+            Показать все
+          </button>
+        </div>
+      </article>
+      <article class="brends-mobile box">
+        <div class="brends-mobile__content">
+          <div class="swiper-container">
+            <div class="article-title">
+              <p class="article-title__text">
+                Ремонт техники различных брендов
+              </p>
+            </div>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="brend-slide">
+                  <a href="#" class="brend-slide__img-link">
+                    <img
+                      src="./img/lenovo_logo.svg"
+                      alt=""
+                      class="brend-slide__img"
+                  /></a>
+                  <div class="brend-slide__btn-box">
+                    <button class="brend-slide__btn-link"></button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="brend-slide">
+                  <a href="#" class="brend-slide__img-link">
+                    <img
+                      src="./img/samsung_logo.svg"
+                      alt=""
+                      class="brend-slide__img"
+                  /></a>
+                  <div class="brend-slide__btn-box">
+                    <button class="brend-slide__btn-link"></button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="brend-slide">
+                  <a href="#" class="brend-slide__img-link">
+                    <img
+                      src="./img/viewsonic_logo.svg"
+                      alt=""
+                      class="brend-slide__img"
+                  /></a>
+                  <div class="brend-slide__btn-box">
+                    <button class="brend-slide__btn-link"></button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="brend-slide">
+                  <a href="#" class="brend-slide__img-link">
+                    <img
+                      src="./img/viewsonic_logo.svg"
+                      alt=""
+                      class="brend-slide__img"
+                  /></a>
+                  <div class="brend-slide__btn-box">
+                    <button class="brend-slide__btn-link"></button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="brend-slide">
+                  <a href="#" class="brend-slide__img-link">
+                    <img
+                      src="./img/viewsonic_logo.svg"
+                      alt=""
+                      class="brend-slide__img"
+                  /></a>
+                  <div class="brend-slide__btn-box">
+                    <button class="brend-slide__btn-link"></button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="brend-slide">
+                  <a href="#" class="brend-slide__img-link">
+                    <img
+                      src="./img/viewsonic_logo.svg"
+                      alt=""
+                      class="brend-slide__img"
+                  /></a>
+                  <div class="brend-slide__btn-box">
+                    <button class="brend-slide__btn-link"></button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="brend-slide">
+                  <a href="#" class="brend-slide__img-link">
+                    <img
+                      src="./img/viewsonic_logo.svg"
+                      alt=""
+                      class="brend-slide__img"
+                  /></a>
+                  <div class="brend-slide__btn-box">
+                    <button class="brend-slide__btn-link"></button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="brend-slide">
+                  <a href="#" class="brend-slide__img-link">
+                    <img
+                      src="./img/viewsonic_logo.svg"
+                      alt=""
+                      class="brend-slide__img"
+                  /></a>
+                  <div class="brend-slide__btn-box">
+                    <button class="brend-slide__btn-link"></button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="brend-slide">
+                  <a href="#" class="brend-slide__img-link">
+                    <img
+                      src="./img/viewsonic_logo.svg"
+                      alt=""
+                      class="brend-slide__img"
+                  /></a>
+                  <div class="brend-slide__btn-box">
+                    <button class="brend-slide__btn-link"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <!-- <script src="js/script.js"></script> -->
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  </body>
 </html>
