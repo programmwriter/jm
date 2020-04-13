@@ -6,12 +6,14 @@
   top: 0;
   left: 0;
   width: 320px;
-  height: auto;
+  height: 100%;
   background: #ffffff;
   z-index: 11;
   //.side-menu__main
   &__main {
+    
     margin-left: 25px;
+    flex-grow: 0;
   }
   //.side-menu__main .upper-menu
   &__main .upper-menu {
@@ -21,7 +23,14 @@
   }
   //.side-menu__footer
   &__footer {
+    display: flex;    
+    justify-content: flex-end;
+    flex-direction: column;
+    flex-grow:1;
     margin-left: 25px;
+  }
+  @media screen and (min-width: $lg) {
+    position: relative;
   }
 }
 
