@@ -1,4 +1,5 @@
 import '../scss/style.scss';
+import '../components/side-menu/side-menu.js';
 
 window.onload = function () {
   const brendsItems = document.querySelector(".brends__items");
@@ -47,6 +48,7 @@ window.onload = function () {
   });
 
   if (window.innerWidth < 350) {
+    console.log(window.innerWidth)
     brends.classList.add("display-none");
     brendsMobile.classList.remove("display-none");
   } else {

@@ -30,7 +30,7 @@ body {
   width: auto;
   min-width: 320px;
   max-width: $screen-xl;
-  height: 100%;
+  height: auto;
   background: $bg-gray;
   @media screen and (min-width: $lg) {
     margin: 0 auto;
@@ -40,16 +40,12 @@ body {
   }
   &__side {
     position: relative;
-    height: auto;
-    overflow: auto;
+    height: 100%;
   }
   &__main {
     overflow: auto;
     max-width: $lg;
-    // justify-content: start;
   }
-  // &__main {
-  // }
 }
 // .upper-menu
 .upper-menu {
@@ -110,15 +106,15 @@ body {
   }
 }
 
-
-
-
 //.popup-btns
 .popup-btns {
   display: flex; 
   //.popup-btns > btn-link
-  & >.btn-link {
-    margin-left: 32px;
+  & >.btn-link:last-child {
+    margin-left: 16px;
+    @media screen and (min-width: $lg) {
+      margin-left: 32px;
+    }
   }
   //.popup-btns--hidden
   &--hidden {
@@ -160,6 +156,7 @@ body {
   font: inherit;
   background-color: transparent;
   cursor: pointer;
+  outline: none;
 
   //btn-link__title
   &__title {

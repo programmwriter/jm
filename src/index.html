@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css" />
     <title>CPS</title>
@@ -20,6 +19,7 @@
                     <img
                       src="./img/burger-close.svg"
                       alt=""
+                      data-btnvalue="burger"
                       class="btn-link__img"
                     />
                   </button>
@@ -41,10 +41,10 @@
                   </button>
                 </div>
               </div>
-            </section>        
+            </section>
             <nav class="vertical-menu">
               <ul class="vertical-menu__items">
-                <li class="vertical-menu__item ">
+                <li class="vertical-menu__item">
                   <a href="index.html" class="vertical-menu__link"
                     >Ремонт техники</a
                   >
@@ -69,7 +69,9 @@
                   <a href="" class="vertical-menu__link">Производителям</a>
                 </li>
                 <li class="vertical-menu__item">
-                  <a href="" class="vertical-menu__link">Наши сервисные центры</a>
+                  <a href="" class="vertical-menu__link"
+                    >Наши сервисные центры</a
+                  >
                 </li>
                 <li class="vertical-menu__item">
                   <a href="" class="vertical-menu__link">Контакты</a>
@@ -83,17 +85,17 @@
                 <div class="icons-set">
                   <div class="icons-set__icon">
                     <button class="btn-link">
-                      <img src="img/call.svg" alt="" class="btn-link__img " />
+                      <img src="img/call.svg" alt="" class="btn-link__img" />
                     </button>
                   </div>
                   <div class="icons-set__icon">
                     <button class="btn-link">
-                      <img src="img/chat.svg" alt="" class="btn-link__img " />
+                      <img src="img/chat.svg" alt="" class="btn-link__img" />
                     </button>
                   </div>
                   <div class="icons-set__icon">
                     <button class="btn-link">
-                      <img src="img/profile.svg" alt="" class="btn-link__img " />
+                      <img src="img/profile.svg" alt="" class="btn-link__img" />
                     </button>
                   </div>
                 </div>
@@ -104,7 +106,9 @@
                 >
               </div>
               <div class="contacts__item">
-                <a href="tel:88008908900" class="contacts__tel">8 800 890 8900</a>
+                <a href="tel:88008908900" class="contacts__tel"
+                  >8 800 890 8900</a
+                >
               </div>
             </div>
             <div class="options">
@@ -115,12 +119,17 @@
           </footer>
         </section>
       </div>
-      <div class="container__main">  
+      <div class="container__main">
         <section class="upper-menu upper-menu--hidden">
           <div class="upper-menu__left-part">
-            <div class="upper-menu__item ">
+            <div class="upper-menu__item">
               <button class="btn-link">
-                <img src="img/burger.svg" alt="" class="btn-link__img" />
+                <img
+                  src="img/burger.svg"
+                  alt=""
+                  data-btnvalue="burger"
+                  class="btn-link__img"
+                />
               </button>
             </div>
             <div class="upper-menu__item">
@@ -157,31 +166,31 @@
                 <button class="btn-link">
                   <p class="btn-link__title">Оставить заявку</p>
                   <img src="img/repair.svg" alt="" class="btn-link__img" />
-                </button>              
+                </button>
                 <button class="btn-link">
                   <p class="btn-link__title">Статус ремонта</p>
                   <img src="img/checkstatus.svg" alt="" class="btn-link__img" />
-                </button>  
-              </div>            
+                </button>
+              </div>
             </div>
           </div>
         </section>
         <div class="title-box">
           <div class="title title-box__left">
             <h1 class="title__text">Услуги и сервисы</h1>
-          </div>           
+          </div>
           <div class="popup-btns popup-btns--hidden title-box__right">
             <button class="btn-link">
               <p class="btn-link__title">Оставить заявку</p>
               <img src="img/repair.svg" alt="" class="btn-link__img" />
-            </button>              
+            </button>
             <button class="btn-link">
               <p class="btn-link__title">Статус ремонта</p>
               <img src="img/checkstatus.svg" alt="" class="btn-link__img" />
-            </button>  
-          </div>          
+            </button>
+          </div>
         </div>
-        <div class="slide-menu ">
+        <div class="slide-menu">
           <ul class="slide-menu__items">
             <li class="slide-menu__item slide-menu__item--active">
               <a class="slide-menu__anchor" href="side-menu.html"
@@ -195,7 +204,9 @@
               <a class="slide-menu__anchor" href="#">Цены на услуги</a>
             </li>
             <li class="slide-menu__item">
-              <a class="slide-menu__anchor" href="#">Адерса сервисных центров</a>
+              <a class="slide-menu__anchor" href="#"
+                >Адерса сервисных центров</a
+              >
             </li>
             <li class="slide-menu__item">
               <a class="slide-menu__anchor" href="#">Специальные цены</a>
@@ -212,8 +223,8 @@
                 официальной гарантией производителя
                 <span class="slide-menu__text--md">
                   <br /><br />
-                  Мы успешно работаем с 1992 года и заслужили репутацию надежного
-                  партнера</span
+                  Мы успешно работаем с 1992 года и заслужили репутацию
+                  надежного партнера</span
                 ><span class="slide-menu__text--lg"
                   >, что подтверждает большое количество постоянных клиентов. Мы
                   гордимся тем, что к нам обращаются по рекомендациям и, в свою
@@ -232,7 +243,9 @@
         <article class="brends box">
           <div class="brends__content">
             <div class="article-title">
-              <p class="article-title__text">Ремонт техники различных брендов</p>
+              <p class="article-title__text">
+                Ремонт техники различных брендов
+              </p>
             </div>
             <ul class="brends__items">
               <li class="brends__item">
@@ -379,14 +392,12 @@
                 </div>
               </li>
             </ul>
-            <button data-block="brends" class="more-btn brends__more-btn ">
+            <button data-block="brends" class="more-btn brends__more-btn">
               Показать все
             </button>
           </div>
         </article>
-        <article class="Technics" >
-          
-        </article>
+        <article class="Technics"></article>
         <article class="brends-mobile box">
           <div class="brends-mobile__content">
             <div class="swiper-container">
@@ -519,10 +530,9 @@
             </div>
           </div>
         </article>
-      </div>   
+      </div>
     </section>
-       
-    
+
     <script src="https://unpkg.com/swiper/js/swiper.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
   </body>
