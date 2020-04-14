@@ -1,5 +1,5 @@
-import '../scss/style.scss';
-import '../components/side-menu/side-menu.js';
+import "../scss/style.scss";
+import "../components/side-menu/side-menu.js";
 
 window.onload = function () {
   const brendsItems = document.querySelector(".brends__items");
@@ -13,16 +13,15 @@ window.onload = function () {
 
   moreBtn.forEach((btn) => {
     btn.addEventListener("click", function (event) {
-      if (event.target.dataset.block === "slide") {        
+      if (event.target.dataset.block === "slide") {
         if (event.target.classList.contains(moreBtnOpen)) {
-          event.target.classList.remove(moreBtnOpen);          
+          event.target.classList.remove(moreBtnOpen);
         } else {
-          event.target.classList.add(moreBtnOpen);          
+          event.target.classList.add(moreBtnOpen);
         }
-      };
+      }
 
-
-      if (event.target.dataset.block === "brends") {        
+      if (event.target.dataset.block === "brends") {
         if (event.target.classList.contains(moreBtnOpen)) {
           event.target.classList.remove(moreBtnOpen);
           brends.classList.remove(brendsExpanded);
@@ -32,10 +31,9 @@ window.onload = function () {
           brends.classList.add(brendsExpanded);
           brendsItems.classList.add(brendsItemsExpanded);
         }
-      };
+      }
     });
   });
-
 
   var swiper = new Swiper(".swiper-container", {
     spaceBetween: 0,
@@ -48,7 +46,7 @@ window.onload = function () {
   });
 
   if (window.innerWidth < 350) {
-    console.log(window.innerWidth)
+    console.log(window.innerWidth);
     brends.classList.add("display-none");
     brendsMobile.classList.remove("display-none");
   } else {
@@ -56,4 +54,3 @@ window.onload = function () {
     brendsMobile.classList.add("display-none");
   }
 };
-

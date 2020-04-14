@@ -1,15 +1,24 @@
+// import  {toggleClass} from '../js/functions.js';
 const btnLinks = document.querySelectorAll(".btn-link");
-// console.log(btnLinks);
+const cont = document.querySelector(".container__side");
+console.log(cont.parentElement);
+
+
+function toggleClass(element,elClass){
+  if (element.classList.contains(elClass)) {
+    element.classList.remove(elClass);
+  } else {
+    element.classList.add(elClass);
+  }
+}
 btnLinks.forEach((el) => {
   el.addEventListener("click", (evt) => {
-    console.log(evt.target.dataset.btnvalue);
     if (evt.target.dataset.btnvalue === "burger") {
       let sideMenu = document.querySelector(".side-menu");
-      if (sideMenu.classList.contains("side-menu--hidden")) {
-        sideMenu.classList.remove("side-menu--hidden");
-      } else {
-        sideMenu.classList.add("side-menu--hidden");
-      }
+      toggleClass(sideMenu,'side-menu--hidden');
+      let containerMain = document.querySelector(".container__main");
+      toggleClass(containerMain,'container__main--blur');
     }
   });
 });
+

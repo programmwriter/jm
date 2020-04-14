@@ -7,14 +7,11 @@ $screen-xl: 1440px;
 // общий марджин слева
 $margin: 16px;
 //mobile
-@media screen and (max-width: $md) {
-  
+@mixin clearfix() {
+  &::after {
+    display: block;
+    clear: both;
+    content: "";
+  }
 }
-//planshet
-@media screen and (max-width: $lg) and (min-width: $sm) {
-  $margin: 24px !global;
-}
-//desctop
-@media screen and (min-width: $lg) {
-  $margin: 16px !global;
-}
+
