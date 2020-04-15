@@ -1,17 +1,11 @@
 //размеры медиа
-$sm: 500px;
+$sm: 350px;
 $md: 768px;
 $lg: 1120px;
 $screen-xl: 1440px;
 
 // общий марджин слева
 $margin: 16px;
-//mobile
-@mixin clearfix() {
-  &::after {
-    display: block;
-    clear: both;
-    content: "";
-  }
-}
+
+
 
