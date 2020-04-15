@@ -2,18 +2,18 @@ import "../scss/style.scss";
 import "../components/side-menu/side-menu.js";
 
 window.onload = function () {
-  const brendsItems = document.querySelector(".brends__items");
-  const brends = document.querySelector(".brends");
+  const slidePocketItems = document.querySelector(".slide-pocket__items");
+  const slidePocket = document.querySelector(".slide-pocket");
   const brendsMobile = document.querySelector(".brends-mobile");
   const moreBtnOpen = "more-btn--open";
-  const brendsExpanded = "brends--expanded";
-  const brendsItemsExpanded = "brends__items--expanded";
+  const brendsExpanded = "slide-pocket--expanded";
+  const slidePocketItemsExpanded = "slide-pocket__items--expanded";
 
   const moreBtn = document.querySelectorAll(".more-btn");
 
   moreBtn.forEach((btn) => {
     btn.addEventListener("click", function (event) {
-      if (event.target.dataset.block === "slide") {
+      if (event.target.dataset.block === "slide-pocket") {
         if (event.target.classList.contains(moreBtnOpen)) {
           event.target.classList.remove(moreBtnOpen);
         } else {
@@ -21,15 +21,15 @@ window.onload = function () {
         }
       }
 
-      if (event.target.dataset.block === "brends") {
+      if (event.target.dataset.block === "slide-pocket") {
         if (event.target.classList.contains(moreBtnOpen)) {
           event.target.classList.remove(moreBtnOpen);
-          brends.classList.remove(brendsExpanded);
-          brendsItems.classList.remove(brendsItemsExpanded);
+          slidePocket.classList.remove(slidePocketExpanded);
+          slidePocketItems.classList.remove(slidePocketItemsExpanded);
         } else {
           event.target.classList.add(moreBtnOpen);
-          brends.classList.add(brendsExpanded);
-          brendsItems.classList.add(brendsItemsExpanded);
+          slidePocket.classList.add(slidePocketExpanded);
+          slidePocketItems.classList.add(slidePocketItemsExpanded);
         }
       }
     });
