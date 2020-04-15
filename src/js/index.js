@@ -9,6 +9,7 @@ window.onload = function () {
   const technics = document.querySelector(".slide-pocket.technics");
 
   const brendsMobile = document.querySelector(".brends-mobile");
+  const technicsMobile = document.querySelector(".technics-mobile");
 
   const moreBtnOpen = "more-btn--open";
 
@@ -67,9 +68,11 @@ window.onload = function () {
     brends.classList.add("display-none");
     technics.classList.add("display-none");
     brendsMobile.classList.remove("display-none");
+    technicsMobile.classList.remove("display-none");
   } else {
     brends.classList.remove("display-none");
     technics.classList.remove("display-none");
     brendsMobile.classList.add("display-none");
+    technicsMobile.classList.add("display-none");
   }
 };

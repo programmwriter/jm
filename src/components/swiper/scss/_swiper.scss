@@ -2,17 +2,25 @@
   width: 320px;
   background: $bg-gray;
   margin-bottom: 16px;
-  overflow: hidden;
-
-  // .brends-mobile__content
-  // &__content {
-  //   margin-left: $margin;
-  // }
+  overflow: hidden;  
+}
+.technics-mobile {
+  width: 320px;
+  height: auto;
+  background: $bg-gray;
+  margin-bottom: 16px;
+  overflow: hidden;  
+}
+.brends-mobile .swiper-container{
+ height: 220px; 
+}
+.technics-mobile .swiper-container{
+ height: 308px; 
 }
 
 .swiper-container {
   width: 320px;
-  height: 234px;
+  
   margin: 0 !important;
   overflow: hidden;
 }
