@@ -2,34 +2,33 @@
   width: 320px;
   background: $bg-gray;
   margin-bottom: 16px;
-  overflow: hidden;  
+  overflow: hidden;
 }
 .technics-mobile {
   width: 320px;
   height: auto;
   background: $bg-gray;
   margin-bottom: 16px;
-  overflow: hidden;  
+  overflow: hidden;
 }
-.brends-mobile .swiper-container{
- height: 220px; 
+.brends-mobile .swiper-container {
+  height: 220px;
 }
-.technics-mobile .swiper-container{
- height: 308px; 
+.technics-mobile .swiper-container {
+  height: 308px;
 }
-.prices-mobile .swiper-container{
- height: 348px; 
+.prices-mobile .swiper-container {
+  height: 320px;
 }
-
 
 .swiper-container {
   width: 320px;
-  
+
   margin: 0 !important;
   overflow: hidden;
 }
 .swiper-slide {
-  width: 240px !important;
+  // width: 240px !important;
   margin-top: 16px;
   margin-right: 16px;
 }

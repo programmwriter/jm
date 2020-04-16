@@ -115,16 +115,21 @@
   padding: 16px;
   background: white;
   border-radius: 6px;
-
+  box-sizing: border-box;
+  font-size: 14px;
   // .price-slide__title
   &__title {
     color: $font_gray;
     margin-bottom: 4px;
+    line-height: 16px;
   }
 
   // .price-slide__item
   &__item {
+    color: $font-text;
     margin-bottom: 16px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
   }
 
   // .price-slide__btn
