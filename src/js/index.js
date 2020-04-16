@@ -5,7 +5,9 @@ window.onload = function () {
   const brendsItems = document.querySelector(".brends .slide-pocket__items");
   const brends = document.querySelector(".slide-pocket.brends");
 
-  const technicsItems = document.querySelector(".technics .slide-pocket__items");
+  const technicsItems = document.querySelector(
+    ".technics .slide-pocket__items"
+  );
   const technics = document.querySelector(".slide-pocket.technics");
 
   const brendsMobile = document.querySelector(".brends-mobile");
@@ -26,7 +28,7 @@ window.onload = function () {
         } else {
           event.target.classList.add(moreBtnOpen);
         }
-      };
+      }
       if (event.target.dataset.block === "technics") {
         if (event.target.classList.contains(moreBtnOpen)) {
           event.target.classList.remove(moreBtnOpen);
@@ -37,7 +39,7 @@ window.onload = function () {
           technics.classList.add(slidePocketExpanded);
           technicsItems.classList.add(slidePocketItemsExpanded);
         }
-      };
+      }
 
       if (event.target.dataset.block === "brend") {
         if (event.target.classList.contains(moreBtnOpen)) {
@@ -49,7 +51,7 @@ window.onload = function () {
           brends.classList.add(slidePocketExpanded);
           brendsItems.classList.add(slidePocketItemsExpanded);
         }
-      };
+      }
     });
   });
 

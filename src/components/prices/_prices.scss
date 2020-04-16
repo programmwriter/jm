@@ -1,13 +1,27 @@
 .prices {
+  margin-bottom: 50px;
+  box-sizing: content-box;
   // .prices__container
   &__container {
+  }
+  &__top-row {
+    padding: 0 24px;
+    height: 64px;
+    color: $font_gray;
+    @media screen and (max-width: $lg) and (min-width: $sm) {
+      padding: 0 16px;
+    }
+    & .order-btn {
+      opacity: 0;
+    }
   }
   // .prices__items
   &__items {
     list-style: none;
     margin: 0;
     background: white;
-    //planshet
+    border-radius: 6px; //planshet
+    margin-bottom: 20px;
 
     padding: 0 24px;
     @media screen and (max-width: $lg) and (min-width: $sm) {
@@ -18,12 +32,14 @@
   &__item {
     height: 64px;
     border-bottom: 1px solid $brd-btm;
-
+    &:last-child {
+      border-bottom: 0;
+    }
     &--title-row {
       background: $bg-gray;
       color: $font_gray;
       margin: 0 -24px;
-      padding: 0 24px;
+      padding: 0 23px;
       @media screen and (max-width: $lg) and (min-width: $sm) {
         margin: 0 -16px;
         padding: 0 16px;
@@ -45,6 +61,9 @@
   // .service__title
   &__title {
     min-width: 390px;
+    &:hover {
+      text-decoration: underline;
+    }
   }
   // .service__cost
   &__cost {
@@ -66,6 +85,15 @@
   height: 32px;
   background: #ff3e79;
   border-radius: 16px;
+  text-decoration: none !important;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  outline: none;
+
+  &:hover {
+    filter: brightness(0.8);
+  }
 
   &::after {
     content: "";
@@ -78,5 +106,31 @@
     border-top: 2px solid white;
     border-right: 2px solid white;
     transform: rotate(45deg);
+  }
+}
+.price-slide {
+  position: relative;
+  height: 200px;
+  width: 260px;
+  padding: 16px;
+  background: white;
+  border-radius: 6px;
+
+  // .price-slide__title
+  &__title {
+    color: $font_gray;
+    margin-bottom: 4px;
+  }
+
+  // .price-slide__item
+  &__item {
+    margin-bottom: 16px;
+  }
+
+  // .price-slide__btn
+  &__btn {
+    position: absolute;
+    right: 5px;
+    bottom: 16px;
   }
 }
