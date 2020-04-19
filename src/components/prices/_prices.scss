@@ -3,6 +3,7 @@
   box-sizing: content-box;
   // .prices__container
   &__container {
+    margin-bottom: 32px;
   }
   &__top-row {
     padding: 0 24px;
@@ -137,5 +138,42 @@
     position: absolute;
     right: 5px;
     bottom: 16px;
+  }
+}
+
+.offer {
+  min-width: 288px;
+
+&__text {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  max-width: 420px;
+  min-width: 288px;
+  color: $font-text;
+  margin-bottom: 16px;
+}
+&__link-box {
+  min-width: 192;
+  margin-right: 70px;
+}
+&__link {
+  min-width: 192px;
+  position: relative;
+  color: $font-text;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-decoration: none;
+  
+  
+}
+&__arrow {
+  display: inline-block;
+  border: solid $arrow;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
   }
 }
