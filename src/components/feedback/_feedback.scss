@@ -1,0 +1,28 @@
+.feedback {
+
+  // .feedback__form
+  &__form {}
+  // .feedback__name
+  &__name {}
+  // .feedback__tel
+  &__tel {}
+  // .feedback__mail
+  &__mail {}
+  // .feedback__message
+  &__message {}
+  // .feedback__agree
+  &__agree {}
+}
+.title {
+  // .title__text
+  &__text {}
+}
+.title-box {
+  // .title-box__left
+  &__left {}
+}
+
+.modal{
+  height:940px;
+  width:440px;
+}
