@@ -91,7 +91,12 @@
   font: inherit;
   cursor: pointer;
   outline: none;
-
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: -0.15px;
+  font-weight: bold;
+  
   &:hover {
     filter: brightness(0.8);
   }
@@ -144,33 +149,31 @@
 .offer {
   min-width: 288px;
 
-&__text {
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: 0.2px;
-  max-width: 420px;
-  min-width: 288px;
-  color: $font-text;
-  margin-bottom: 16px;
-}
-&__link-box {
-  min-width: 192;
-  margin-right: 70px;
-}
-&__link {
-  min-width: 192px;
-  position: relative;
-  color: $font-text;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: -0.2px;
-  text-decoration: none;
-  
-  
-}
-&__arrow {
-  display: inline-block;
-  border: solid $washed-rose;
+  &__text {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    max-width: 420px;
+    min-width: 288px;
+    color: $font-text;
+    margin-bottom: 16px;
+  }
+  &__link-box {
+    min-width: 192;
+    margin-right: 70px;
+  }
+  &__link {
+    min-width: 192px;
+    position: relative;
+    color: $font-text;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-decoration: none;
+  }
+  &__arrow {
+    display: inline-block;
+    border: solid $washed-rose;
     border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 3px;

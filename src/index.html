@@ -19,8 +19,8 @@
                     <img
                       src="./img/burger-close.svg"
                       alt=""
-                      data-btnvalue="burger"
                       class="btn-link__img"
+                      data-btnvalue="burger"
                     />
                   </button>
                 </div>
@@ -85,12 +85,22 @@
                 <div class="icons-set">
                   <div class="icons-set__icon">
                     <button class="btn-link">
-                      <img src="img/call.svg" alt="" class="btn-link__img" />
+                      <img
+                        src="img/call.svg"
+                        alt=""
+                        class="btn-link__img"
+                        data-btnvalue="modall-call-open"
+                      />
                     </button>
                   </div>
                   <div class="icons-set__icon">
                     <button class="btn-link">
-                      <img src="img/chat.svg" alt="" class="btn-link__img" />
+                      <img
+                        src="img/chat.svg"
+                        alt=""
+                        class="btn-link__img"
+                        data-btnvalue="modall-feedback-open"
+                      />
                     </button>
                   </div>
                   <div class="icons-set__icon">
@@ -127,8 +137,8 @@
                 <img
                   src="img/burger.svg"
                   alt=""
-                  data-btnvalue="burger"
                   class="btn-link__img"
+                  data-btnvalue="burger"
                 />
               </button>
             </div>
@@ -143,12 +153,22 @@
               <div class="icons-set">
                 <div class="icons-set__icon">
                   <button class="btn-link">
-                    <img src="img/call.svg" alt="" class="btn-link__img" />
+                    <img
+                      src="img/call.svg"
+                      alt=""
+                      class="btn-link__img"
+                      data-btnvalue="modall-call-open"
+                    />
                   </button>
                 </div>
                 <div class="icons-set__icon">
                   <button class="btn-link">
-                    <img src="img/chat.svg" alt="" class="btn-link__img" />
+                    <img
+                      src="img/chat.svg"
+                      alt=""
+                      class="btn-link__img"
+                      data-btnvalue="modall-feedback-open"
+                    />
                   </button>
                 </div>
                 <div class="icons-set__icon">
@@ -538,8 +558,7 @@
               </li>
             </ul>
           </div>
-          
-        </article>        
+        </article>
         <article class="brends-mobile box">
           <div class="swiper-container">
             <div class="article-title">
@@ -860,16 +879,22 @@
             <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
           </div>
-          
         </article>
         <article class="offer box">
-          <div class="offer__text">Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</div>
-          <div class="offer__link-box"> <a href="" class="offer__link">Получить коммерческое предложение</a> <i class="offer__arrow"></i></div>
+          <div class="offer__text">
+            Все цены указаны с учетом НДС. Стоимость ремонта указана на
+            единичную услугу. Для получения коммерческого предложения на
+            постоянное обслуживание, оставьте заявку.
+          </div>
+          <div class="offer__link-box">
+            <a href="" class="offer__link">Получить коммерческое предложение</a>
+            <i class="offer__arrow"></i>
+          </div>
         </article>
         <article class="footer box">
           <div class="footer__item">
-            © 2019 CPS <br> 
-              Разработано командой Apesong 
+            © 2019 CPS <br />
+            Разработано командой Apesong
             <!-- <div class="footer__text">© 2019 CPS <br> 
               Разработано командой Apesong </div> -->
           </div>
@@ -878,26 +903,94 @@
             <!-- <div class="footer__text">Политика конфиденциальности</div> -->
           </div>
           <div class="footer__item">
-            Информация, размещенная на данной странице, не является публичной офертой
+            Информация, размещенная на данной странице, не является публичной
+            офертой
             <!-- <div class="footer__text">Информация, размещенная на данной странице, не является публичной офертой</div> -->
           </div>
         </article>
-        <article class="feedback modal">
-          <div class="title title-box__left">
-            <h1 class="title__text">Обратная связь</h1>
-          </div>
-          <form action="" class="feedback__form">
-            <input type="text" class="feedback__input"  placeholder="Имя">
-            <input type="tel" class="feedback__input"  placeholder="Телефон">
-            <input type="email" class="feedback__input"  placeholder="Электронная почта">
-            <input type="text" class="feedback__input"  placeholder="Сообщение">
-            <div class="feedback__agree">Нажимая “отправить”, вы даете согласие на <span class="feedback__color-text"> обработку персональных данных</span> и соглашаетесь с нашей <span class="feedback__color-text">политикой конфиденциальности</span></div>
-            <button type="submit" class="order-btn feedback__submit">Отправить</button>
-          </form>
-        </article>
       </div>
+      <article class="modal modal--hidden feedback">
+        <div class="title modal-title">
+          <h1 class="title__text">Обратная связь</h1>
+          <button class="btn-link modal-close">
+            <img
+              src="./img/burger-close.svg"
+              alt=""
+              class="btn-link__img"
+              data-btnvalue="modall-feedback-close"
+            />
+          </button>
+        </div>
+        <form action="#" name="feedback-form" class="modal__form">
+          <input
+            name="name"
+            type="text"
+            class="modal__input"
+            placeholder="Имя"
+          />
+          <input
+            name="trl"
+            type="tel"
+            class="modal__input"
+            placeholder="Телефон"
+          />
+          <input
+            name="mail"
+            type="email"
+            class="modal__input"
+            placeholder="Электронная почта"
+          />
+          <textarea
+            name="message"
+            class="modal__input modal__textarea"
+            placeholder="Сообщение"
+          ></textarea>
+          <div class="modal__agree">
+            Нажимая “отправить”, вы даете согласие на
+            <span class="modal__color-text">
+              обработку персональных данных</span
+            >
+            и соглашаетесь с нашей
+            <span class="modal__color-text">политикой конфиденциальности</span>
+          </div>
+          <button type="submit" class="order-btn modal__submit">
+            Отправить
+          </button>
+        </form>
+      </article>
+      <article class="modal modal--hidden call">
+        <div class="title modal-title">
+          <h1 class="title__text">Заказать звонок</h1>
+          <button class="btn-link modal-close">
+            <img
+              src="./img/burger-close.svg"
+              alt=""
+              class="btn-link__img"
+              data-btnvalue="modall-call-close"
+            />
+          </button>
+        </div>
+        <form action="#" name="call-form" class="modal__form">
+          <input
+            name="trl"
+            type="tel"
+            class="modal__input"
+            placeholder="Телефон"
+          />
+          <div class="modal__agree">
+            Нажимая “отправить”, вы даете согласие на
+            <span class="modal__color-text">
+              обработку персональных данных</span
+            >
+            и соглашаетесь с нашей
+            <span class="modal__color-text">политикой конфиденциальности</span>
+          </div>
+          <button type="submit" class="order-btn modal__submit">
+            Отправить
+          </button>
+        </form>
+      </article>
     </section>
-    
 
     <script src="https://unpkg.com/swiper/js/swiper.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
