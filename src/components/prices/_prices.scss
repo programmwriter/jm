@@ -84,7 +84,7 @@
   color: #fff;
   width: 120px;
   height: 32px;
-  background: #ff3e79;
+  background: $washed-rose;
   border-radius: 16px;
   text-decoration: none !important;
   border: none;
@@ -170,7 +170,7 @@
 }
 &__arrow {
   display: inline-block;
-  border: solid $arrow;
+  border: solid $washed-rose;
     border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 3px;

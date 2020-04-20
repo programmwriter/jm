@@ -28,7 +28,7 @@
     position: relative;
     height: 40px;
     width: 40px;
-    border: 2px solid #ff3e79;
+    border: 2px solid $washed-rose;
     box-sizing: border-box;
     border-radius: 20px;
     font: inherit;
@@ -43,8 +43,8 @@
     width: 8px;
     left: 12px;
     top: 12px;
-    border-top: 3px solid #ff3e79;
-    border-right: 3px solid #ff3e79;
+    border-top: 3px solid $washed-rose;
+    border-right: 3px solid $washed-rose;
     transform: rotate(45deg);
   }  
 }
