@@ -1,5 +1,6 @@
 import "../scss/style.scss";
 import "./btn-link.js";
+import Swiper from "swiper";
 
 window.onload = function () {
   const brendsItems = document.querySelector(".brends .slide-pocket__items");
@@ -20,7 +21,7 @@ window.onload = function () {
   const slidePocketExpanded = "slide-pocket--expanded";
   const slidePocketItemsExpanded = "slide-pocket__items--expanded";
 
-  const moreBtns = document.querySelectorAll(".more-btn");  
+  const moreBtns = document.querySelectorAll(".more-btn");
 
   moreBtns.forEach((btn) => {
     btn.addEventListener("click", function (event) {
@@ -54,17 +55,6 @@ window.onload = function () {
           brendsItems.classList.add(slidePocketItemsExpanded);
         }
       }
-      // if (event.target.dataset.block === "brend") {
-      //   if (event.target.classList.contains(moreBtnOpen)) {
-      //     event.target.classList.remove(moreBtnOpen);
-      //     brends.classList.remove(slidePocketExpanded);
-      //     brendsItems.classList.remove(slidePocketItemsExpanded);
-      //   } else {
-      //     event.target.classList.add(moreBtnOpen);
-      //     brends.classList.add(slidePocketExpanded);
-      //     brendsItems.classList.add(slidePocketItemsExpanded);
-      //   }
-      // }
     });
   });
 

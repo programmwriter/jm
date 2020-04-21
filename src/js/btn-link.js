@@ -1,14 +1,8 @@
 // import  {toggleClass} from '../js/functions.js';
+import  {toggleClass} from '../js/functions';
 const btnLinks = document.querySelectorAll(".btn-link");
 const cont = document.querySelector(".container__side");
 
-function toggleClass(element, elClass) {
-  if (element.classList.contains(elClass)) {
-    element.classList.remove(elClass);
-  } else {
-    element.classList.add(elClass);
-  }
-}
 btnLinks.forEach((el) => {
   el.addEventListener("click", (evt) => {
     let sideMenu = document.querySelector(".side-menu");
