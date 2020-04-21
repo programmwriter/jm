@@ -12,6 +12,8 @@
 
   @media screen and (max-width: $sm) {
     width: 320px;
+    height: 676px;
+    left: 0;
     z-index: 100;
   }
 
@@ -38,7 +40,7 @@
     margin-bottom: 16px;
     text-indent: 16px;
   }
-  
+
   &__input::placeholder {
     font-family: TT Lakes;
     color: $placeholder;
@@ -46,7 +48,7 @@
     line-height: 24px;
     letter-spacing: -0.2px;
   }
-&__textarea {
+  &__textarea {
     height: 118px;
   }
   // .modal__submit
@@ -62,7 +64,7 @@
   &__agree {
     margin-bottom: 19px;
   }
-  &--hidden{
+  &--hidden {
     display: none;
   }
 }
@@ -73,6 +75,9 @@
   font-size: 24px;
   line-height: 32px;
   letter-spacing: -0.6px;
+  @media screen and (max-width: $sm) {
+    margin-top: 96px;
+  }
 
   //.title.modal-title .title__text
   & .title__text {
@@ -82,14 +87,18 @@
     text-indent: 32px;
   }
 }
-.modal-close{
+.modal-close {
   position: absolute;
   top: 0;
   left: -72px;
+  @media screen and (max-width: $sm) {
+    top: -75px ;
+    left: 11px;
+  }
 }
 // .feedback {
-//   display: flex; 
+//   display: flex;
 // }
 // .call {
-//   display: flex;  
+//   display: flex;
 // }

@@ -1,3 +1,4 @@
+//side-menu
 .side-menu {
   display: flex;
   flex-direction: column;  
@@ -16,12 +17,14 @@
     margin-left: 25px;
     flex-grow: 0;
   }
+
   //.side-menu__main .upper-menu
   &__main .upper-menu {
     margin-left: -25px;
     border-bottom: none;
     margin-bottom: 30px;
   }
+
   //.side-menu__footer
   &__footer {
     flex-grow: 1;
@@ -36,40 +39,47 @@
   }
 
   @media screen and (max-width: $lg) and (min-width: $sm) {
-    box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2);    
-    //todo обдумать высоту
+    box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2);   
     min-height: 1024px;
   }
 
   @media screen and (min-width: $lg) {
     position: relative;
   }
-
+  
+  //side-menu--hidden
   &--hidden {
+
     @media screen and (max-width: $md) and (min-width: $sm) {
       display: none !important;
     }
+
     @media screen and (max-width: $sm) {
       display: none !important;
     }
   }
 }
 
+// .vertical-menu
 .vertical-menu {
+
   // .vertical-menu__items
   &__items {
     margin: 0;
     padding: 0;
   }
+
   // .vertical-menu__item
   &__item {
     list-style: none;
     margin-bottom: 30px;
   }
+
   // .vertical-menu__item--active
   &__item--active {
     position: relative;
   }
+
   // .vertical-menu__item--active::before
   &__item--active::before {
     content: "";
@@ -82,11 +92,13 @@
     border-top: 3px solid transparent;
     border-bottom: 3px solid transparent;
   }
+
   // .vertical-menu__item--active > .vertical-menu__link
   &__item--active > &__link {
     position: relative;
     color: $font_gray;
   }
+
   // .vertical-menu__link
   &__link {
     display: block;
@@ -96,31 +108,36 @@
     letter-spacing: -0.2px;
     color: $font-text;
   }
+
   // .vertical-menu__link:hover
   &__link:hover {
     text-decoration: underline;
     color: lighten($font-text, 40%);
   }
 }
-
+//contacts
 .contacts {
   margin-bottom: 40px;
 
-  // .contacts__item
+  //contacts__item
   &__item {
     margin-bottom: 12px;
   }
-  // .contacts__mail,.contacts__tel,
+
+  //contacts__mail,.contacts__tel,
   &__mail,
   &__tel {
     display: block;
     text-decoration: none;
     color: $font-text;
   }
+
+  //contacts__:hover, contacts__tel:hover
   &__mail:hover,
   &__tel:hover {
     opacity: 0.6;
   }
+
   // .contacts__mail
   &__mail {
     margin: 0;
@@ -129,6 +146,7 @@
     letter-spacing: -0.2px;
     font-weight: 500;
   }
+
   // .contacts__tel
   &__tel {
     margin: 0;
@@ -138,9 +156,11 @@
     font-weight: bold;
   }
 }
+
+//options
 .options {
   margin-bottom: 32px;
-  // .options__btn
+  //options__btn
   &__btn {
     text-decoration: none;
     padding: 0;
@@ -155,12 +175,14 @@
     color: $font-text;
     font-weight: 500;
   }
-  // .options__btn:hover
+
+  //options__btn:hover
   &__btn:hover {
     text-decoration: underline;
     color: lighten($font-text, 40%);
   }
-  // .options__btn--active
+
+  //options__btn--active
   &__btn--active {
     color: lighten($font-text, 40%);
   }

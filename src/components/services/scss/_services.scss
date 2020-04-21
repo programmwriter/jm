@@ -4,18 +4,22 @@
   align-items: center;
   height: 72px;
   width: 240px;
-  @media screen and (max-width: $lg) and (min-width: $sm) {
-    width: 224px;
-  }
   background: #ffffff;
   border: 1px solid #eaeaea;
   box-sizing: border-box;
   border-radius: 6px;
   padding-left: 16px;
 
-  &:hover &__img-link, &:hover &__btn-box{
+  @media screen and (max-width: $lg) and (min-width: $sm) {
+    width: 224px;
+  }
+
+  // brend-slide:hover brend-slide__img-link, brend-slide:hover brend-slide__btn-box
+  &:hover &__img-link,
+  &:hover &__btn-box {
     opacity: 0.5;
   }
+
   // brend-slide__item-box
   &__btn-box {
     display: flex;
@@ -23,6 +27,7 @@
     flex-grow: 1;
     margin-right: 16px;
   }
+
   // brend-slide__btn-link
   &__btn-link {
     position: relative;
@@ -35,6 +40,7 @@
     background-color: transparent;
     cursor: pointer;
   }
+
   // brend-slide__btn-link::before
   &__btn-link::before {
     position: absolute;
@@ -46,5 +52,5 @@
     border-top: 3px solid $washed-rose;
     border-right: 3px solid $washed-rose;
     transform: rotate(45deg);
-  }  
+  }
 }

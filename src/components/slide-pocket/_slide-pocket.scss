@@ -1,3 +1,4 @@
+//lide-pocket
 .slide-pocket {
   max-width: 1121;
   min-width: 320px;
@@ -5,13 +6,13 @@
   overflow: hidden;
   background: $bg-gray;
 
-  //.slide-pocket--expanded
+  //slide-pocket--expanded
   &--expanded{
     height:auto;
     overflow: visible;
   }
   
-  // .slide-pocket__items
+  //slide-pocket__items
   &__items {
     padding: 0;
     display: flex;
@@ -20,16 +21,19 @@
     justify-content: flex-start;
     flex-wrap: wrap;
   }
-  // .slide-pocket__items--expanded
+
+  //slide-pocket__items--expanded
   &__items--expanded {
     height:auto;
     overflow: visible;
   }
-  // .slide-pocket__item
+
+  //slide-pocket__item
   &__item {
     list-style: none;
     margin-right: 31px;
     margin-top: 16px;
+    
     @media screen and (max-width: $lg) and (min-width: $sm) {
       margin-right: 24px;
     }
