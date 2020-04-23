@@ -349,8 +349,13 @@ body {
   // .slide-menu__content
   &__content {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-around;
+
+    //=320
+    @media screen and (max-width: $md) {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
   }
 
   // .slide-menu__description
@@ -359,27 +364,10 @@ body {
     width: auto;
     margin-bottom: 25px;
     overflow: hidden;
-
-    // @media screen and (max-width: $md) {
-    //   max-height: 120px;
-    //   max-width: 290px;
-    // }
-
-    // @media screen and (max-width: $lg) and (min-width: $sm) {
-    //   max-height: 160px;
-    //   max-width: 312px;
-    // }
-
-    // @media screen and (min-width: $lg) {
-    //   max-width: 500px;
-    //   max-height: 180px;
-    // }
   }
 
   //slide-menu__text
   &__text {
-    // max-width: 490px;
-    // max-height: 160px;
     font-size: 14px;
     line-height: 18px;
     letter-spacing: 0.2px;
@@ -388,56 +376,53 @@ body {
     overflow: hidden;
     z-index: 9;
 
-    @media screen and (min-width: $small) and (max-width: $md) {
-      max-height: 160px;
-      max-width: 312px;
-    }
-
+    //text
+    //=320
     @media screen and (max-width: $small) {
       max-height: 90px;
       max-width: 288px;
+    }    
+    //320< and <768
+    @media screen and (min-width: $small) and (max-width: $md) {
+      max-height: 160px;
+      min-width: 312px;
+    }
+    // 768 < and < 1120
+    @media screen and (min-width: $md) and (max-width: $screen-xl) {
+      max-height: 160px;
+      // max-width: 312px;
+    }
+    //1440<
+    @media screen and (min-width: $screen-xl) {
+      max-height: 160px;
+      max-width: 490px;
     }
   }
-  //slide-menu__text--md
-  // &__text--md {
-  //   display: none;
-  //   @media screen and (min-width: $md) {
-  //     display: inline;
-  //   }
-  // }
-  // //slide-menu__text--lg
-  // &__text--lg {
-  //   display: none;
-  //   @media screen and (min-width: $lg) {
-  //     display: inline;
-  //   }
-  // }
 
   //slide-menu__img
   &__img {
     box-sizing: border-box;
     border-radius: 2px;
 
-    @media screen and (min-width: $small) and (max-width: $md) {
-      max-height: 160px;
-      max-width: 360px;
-    }
-
+    //=320
     @media screen and (max-width: $small) {
       max-width: 320px;
     }
-
-    // @media screen and (max-width: $lg) and (min-width: $sm) {
-    //   height: 260px;
-    //   width: 360px;
-    //   margin-left: 48px;
-    // }
-
-    // @media screen and (min-width: $lg) {
-    //   height: 300px;
-    //   width: 530px;
-    //   margin-left: 36px;
-    // }
+    //320< and <768
+    @media screen and (min-width: $sm) and (max-width: $md) {
+      max-height: 208px;
+      min-width: 360px;
+    }
+    // 768 < and < 1120
+    @media screen and (min-width: $md) and (max-width: $lg) {
+      max-height: 208px;
+      min-width: 360px;
+    }
+    //1120<
+    @media screen and (min-width: $lg) {
+      max-height: 307px;
+      min-width: 530px;
+    }
   }
 }
 
