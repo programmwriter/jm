@@ -27,6 +27,18 @@
     }
   }
 
+  //.footer__item-link
+  &__item-link{
+    color: $font-text;
+    text-decoration: none;
+
+    &:hover{
+      text-decoration: underline;
+      opacity: 0.8;
+    }
+  }
+  
+
   //.footer__item:nth-child(1)
   &__item:nth-child(1) {
     text-align: left;

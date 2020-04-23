@@ -87,23 +87,23 @@ window.onload = function () {
     },
   });
 
-  if (window.innerWidth < 700) {
-    console.log(`if ${window.innerWidth}`);
-    brends.classList.add("display-none");
-    technics.classList.add("display-none");
-    prices.classList.add("display-none");
+  window.addEventListener("resize", () => {    
+    if (window.innerWidth < 768) {
+      brends.classList.add("display-none");
+      technics.classList.add("display-none");
+      prices.classList.add("display-none");
 
-    brendsMobile.classList.remove("display-none");
-    technicsMobile.classList.remove("display-none");
-    pricesMobile.classList.remove("display-none");
-  } else {
-    console.log(`else ${window.innerWidth}`);
-    brends.classList.remove("display-none");
-    technics.classList.remove("display-none");
-    prices.classList.remove("display-none");
+      brendsMobile.classList.remove("display-none");
+      technicsMobile.classList.remove("display-none");
+      pricesMobile.classList.remove("display-none");
+    } else {
+      brends.classList.remove("display-none");
+      technics.classList.remove("display-none");
+      prices.classList.remove("display-none");
 
-    brendsMobile.classList.add("display-none");
-    technicsMobile.classList.add("display-none");
-    pricesMobile.classList.add("display-none");
-  }
+      brendsMobile.classList.add("display-none");
+      technicsMobile.classList.add("display-none");
+      pricesMobile.classList.add("display-none");
+    }
+  });
 };

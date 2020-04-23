@@ -50,7 +50,8 @@
   //side-menu--hidden
   &--hidden {
 
-    @media screen and (max-width: $md) and (min-width: $sm) {
+
+    @media screen and (max-width: $lg) and (min-width: $sm) {
       display: none !important;
     }
 
